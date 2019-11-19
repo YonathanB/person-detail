@@ -7,7 +7,7 @@ import { PersonDetailsComponent } from './person-details/person-details.componen
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule ],
-  declarations: [ AppComponent, PersonDetailsComponent ],
+  declarations: [ AppComponent , PersonDetailsComponent],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
