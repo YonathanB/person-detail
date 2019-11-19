@@ -1,3 +1,19 @@
 <div class="person-details-container">
-coucou
+<div class="right">
+    <div *ngFor="let d of datasource.right">
+        <div class="key">{{d.key}}</div>
+        <div class="value"  [ngStyle]="d.style">{{d.value}}</div>
+    </div>
 </div>
+<div class="left">
+        <div   *ngFor="let d of datasource.left" >
+                <div class="key">{{d.key}}</div>
+                <div class="value" [ngStyle]="d.style" #elem>{{d.value}}{{d | addActions: elem }} </div>
+        </div>
+    </div>
+
+    <div class="media">
+        <div></div>
+    </div>
+</div>
+

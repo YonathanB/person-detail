@@ -1,0 +1,41 @@
+.person-details-container{
+border: 1px solid gray;
+border-radius: 5px;
+padding: 15px;
+display: flex;
+flex-wrap: wrap; 
+// overflow: auto;
+.right, .left{
+    > div{
+    display: flex;
+    align-items: center;
+    }
+}
+.right{
+    flex: 2
+}
+.left{
+    flex: 3
+}
+.key{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+min-width: 130px;
+}
+
+.value{
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+.media{
+    flex: 1;
+   display: flex;
+   justify-content: center;
+
+   > div{
+        width: 250px;
+        height: 200px;
+        background-color: gray;
+    }
+}
+}
